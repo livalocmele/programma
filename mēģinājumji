@@ -1,0 +1,19 @@
+vardi=['Slay','Pop off','Cool','Ong','Omg','']
+sk=['ļoti labi','stiligi','jautri']
+liet=['tas bija tāds slay','pop off draudzene','tas ir tik cool']
+a=(input("Ievadi vārdu, kuram vēlies zināt skaidrojumu.To raksti ar lielo sākumburtu- "))
+if a in vardi:
+    print(sk[vardi.index(a)])
+    while True:
+        b=(input("Vai vēlaties redzēt vārda lietojuma piemēru? Atbildiet ar 'Jā' vai 'Nē'.- "))
+        if b == 'Jā':
+            print(liet[vardi.index(a)])
+            break
+        elif b =='Nē':
+            print("Ceru, ka programma bija spējīga atrisināt Jūsu neskaidrības!")
+            break
+        else:
+            print("Atbilde nav nolasāma, pārliecinies, ka ievadīji prasīto pareizi.")
+            break
+else:
+    print("Ievdaītais vārds nav programmai pazīstams, pārliecinies, ka tas ir piedāvāto vārdu sarakstā un mēģini vēlreiz.")
