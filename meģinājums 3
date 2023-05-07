@@ -52,3 +52,4 @@ else:
         papild=(input("Ievadi vārdu - ")) 
         vardi.append(papild)
     print("Vārdnīca tika veiksmīgi papildināta - ", vardi)
+print("Cerams, ka spējām atrisināt Jūsu problēmas! Uz dīzu tikšanos")
