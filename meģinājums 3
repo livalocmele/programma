@@ -1,7 +1,7 @@
 from math import*
 import random
-def print_lists(sk, vardi):
-    for item1, item2 in zip(sk, vardi):
+def print_lists(vardi, sk):
+    for item1, item2 in zip(vardi, sk):
         print(item1, item2)
 vardi=['Slay','Pop off','Cool','ONG','OMG','Hang out','My bad','Chill out','Fire','Ielikot','Hoodijs','Emo','BTW','Memes','L bozo','W rizz','Flexot','LOL','Sničot','Ieķert napu','Chatot','Vaibot','Bussin','Low-key','Sus','GOAT','Snached']
 sk=['Izdarīt kaut ko pārsteidzoši vai iespaidīgi labi','Izdarīt kaut ko pārsteidzoši labi','Stilīgs, moderns','Saīsinājums teicienaim "On God", kas nozīmē pilnībā piekrist kāda teiktajam','Saīsinājums teicienam "Oh My God", kurš izpauž spēcigas emocījas, bieži dusmas, pārsteigumu par iepriekš apspriesto','Pavadīt laiku ar draugiem, nedarot neko konkrētu','Atzīt savu vainu un atvainoties par to','Nomierinies, atslāpsti','Kaut kas, kas ir ļoti labs, izcils','Izrādīt savu patiku, atbalstu izmantojot sociālos tīklus kā "Instagram" vai "Tiktok"','Džemperis ar kapuci','Emocionāls cilvēks, kuram bieži ir izteikts stils, kurš saistīts ar tumšām krāsām','Saīsinājums teicienam "By The Way", kas izmantots kā piebilde vai "Ja nu kas"','Modernās ikdienas informācija parveidota attēlos ar uzrakstiem, ar nolūku uzjautrināt attiecīgo mērķauditoriju','Muļķis, izmantots, lai apsmietu cilvēka zaudējumus','Spēja piesaistīt interesējošā dzimuma romantisku uzmanību pārsteidzoši labi','Lielīties ar mantiskām lietām','Saīsinājums teicienam "Laughing Out Loud", kas nozīmē, ka iepriekš pateiktais ir ļoti smieklīgs','Aktivitāte, kurā cilvēks nodod kāda cilvēka noslēpumus vai informāciju','Gulēt diendusu','Sarunāties, sarakstīties','Pavadīt laiku ar draugiem, nedarot neko specifisku','Kaut kas ļoti labs, pretfekts','Kluss, mierīgs, neuzspiedošs','Saīsinājums vārdam "Suspicious", kas nozīmē aizdomīgs','Saīsinājums teicienam "Greatest Of All Time", kas nozīmē neiedomājami labs cilvēks','Divi skaidrojumi 1.Ļoti tievs, savilkts vai 2. Kad draugs draudzīgā veidā nozog vai paņem cilvēka mantas']
@@ -36,9 +36,9 @@ else:
             else:
                 print("Atbilde nav nolasāma, pārliecinies, ka ievadīji prasīto pareizi.")
                 break  
-v=(input("Vai vēlies redzēt visus pieejamos skaidrojumus, kuriem uzreiz pēc tiem ir attiecīgais skaidrojums? Atbildi ar 'Jā' vai 'Nē', lai turpinātu.- "))         
+v=(input("Vai vēlies redzēt visus pieejamos vardus, kuriem uzreiz pēc tiem ir attiecīgais skaidrojums? Atbildi ar 'Jā' vai 'Nē', lai turpinātu.- "))         
 if v== 'Jā':
-        print(print_lists(sk,vardi))
+        print(print_lists(vardi,sk))
 elif v=='Nē':
     print("Cerams, ka izdevās atrasts meklētās atbildes")
 else:
@@ -52,4 +52,4 @@ else:
         papild=(input("Ievadi vārdu - ")) 
         vardi.append(papild)
     print("Vārdnīca tika veiksmīgi papildināta - ", vardi)
-print("Cerams, ka spējām atrisināt Jūsu problēmas! Uz dīzu tikšanos")
+print("Cerams, ka spējām atrisināt Jūsu problēmas! Uz dīzu tikšanos!")
