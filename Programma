@@ -1,0 +1,72 @@
+def print_lists(vardi, sk):
+    for item1, item2 in zip(vardi, sk):
+        print(item1, item2)
+vardi=['Slay','Pop off','Cool','ONG','OMG','Hang out','My bad','Chill out','Fire','Ielikot','Hoodijs','Emo','BTW','Memes','L bozo','W rizz','Flexot','LOL','Sničot','Ieķert napu','Chatot','Vaibot','Bussin','Low-key','Sus','GOAT','Snached']
+sk=['Izdarīt kaut ko pārsteidzoši vai iespaidīgi labi','Izdarīt kaut ko pārsteidzoši labi','Stilīgs, moderns','Saīsinājums teicienaim "On God", kas nozīmē pilnībā piekrist kāda teiktajam','Saīsinājums teicienam "Oh My God", kurš izpauž spēcigas emocījas, bieži dusmas, pārsteigumu par iepriekš apspriesto','Pavadīt laiku ar draugiem, nedarot neko konkrētu','Atzīt savu vainu un atvainoties par to','Nomierinies, atslāpsti','Kaut kas, kas ir ļoti labs, izcils','Izrādīt savu patiku, atbalstu izmantojot sociālos tīklus kā "Instagram" vai "Tiktok"','Džemperis ar kapuci','Emocionāls cilvēks, kuram bieži ir izteikts stils, kurš saistīts ar tumšām krāsām','Saīsinājums teicienam "By The Way", kas izmantots kā piebilde vai "Ja nu kas"','Modernās ikdienas informācija parveidota attēlos ar uzrakstiem, ar nolūku uzjautrināt attiecīgo mērķauditoriju','Muļķis, izmantots, lai apsmietu cilvēka zaudējumus','Spēja piesaistīt interesējošā dzimuma romantisku uzmanību pārsteidzoši labi','Lielīties ar mantiskām lietām','Saīsinājums teicienam "Laughing Out Loud", kas nozīmē, ka iepriekš pateiktais ir ļoti smieklīgs','Aktivitāte, kurā cilvēks nodod kāda cilvēka noslēpumus vai informāciju','Gulēt diendusu','Sarunāties, sarakstīties','Pavadīt laiku ar draugiem, nedarot neko specifisku','Kaut kas ļoti labs, pretfekts','Kluss, mierīgs, neuzspiedošs','Saīsinājums vārdam "Suspicious", kas nozīmē aizdomīgs','Saīsinājums teicienam "Greatest Of All Time", kas nozīmē neiedomājami labs cilvēks','Divi skaidrojumi 1.Ļoti tievs, savilkts vai 2. Kad draugs draudzīgā veidā nozog vai paņem cilvēka mantas']
+liet=['Tava prezentācija šodien bija tāds slay.','Reali pop off, tev tik labi sanāk gatovot ēst, ','Tava jaka ir tik cool.','Pilnībā piekrītu, ka tas bija tik negodīgi no skolotājas puses, reali ONG.','OMG, tu redzēji ķīmijas atzīmes?','Tu negribi šodien uztaisīt mazu hang out, vienkārši nedarīt neko.','Es nezināju, ka te kāds ir, my bad.','Tas nav tik nopietni, taka chill out.','Jūsu jaunā dziesma ir tik fire.','Jā, es ielaikoju tavu jauno bildi Instagram.','Paskaties, viņam ir tik smuks hoodijs.','Tie bērni izskatās pēc tādiem Emo.','BTW, tu redzēji, ka izlika atzīmes matemātikā?','Tu redzēji to meme par to Karalienes Elizabetes laiku tronī? Tragiski, bet arī smieklīgi.','Redzi es teicu, ka man bija taisnība, L bozo.','Tam puisim ir tāds W rizz. Visas meitenes viņam skrien pakaļ.','Tu vari beigt flexot, mēs sapratām, ka tu esi bagāts.','Tas joks bija tik smieklīgs, LOL.','Es nosničoju to draugu grupu, lai viņiem būtu nepatikšanas.','Man tā nāk miegs, es iešu ieķert napiņu.','Vakar visu nakti chatoju ar draugiem.','Sestdien, koncertā mēs tā vaibojām.','Tā kūka vakar bija tik bussin.','Tā dziesma bija lew-key laba.','Tā pamestā māja izskatās ļoti sus.','Rainis ir tāds GOAT.','Viņa snachoja manu darbu, lai norakstītu.']
+print(vardi)
+a=(input("Ievadiet vārdu, no augstāk redzamā saraksta, kuram vēlies zināt skaidrojumu. To raksti ar lielo sākuma burtu - "))
+if a in vardi:
+    print(sk[vardi.index(a)])
+    while True:
+        b=(input("Vai vēlaties redzēt vārda lietojuma piemēru? Atbildiet ar 'Jā' vai 'Nē'. - "))
+        if b == 'Jā':
+            print(liet[vardi.index(a)])
+            break
+        elif b =='Nē':
+            print("Ceru, ka programma bija spējīga atrisināt Jūsu neskaidrības!")
+            break
+        else:
+            print("Atbilde nav nolasāma, pārliecinies, ka ievadīji prasīto pareizi.")
+            break
+else:
+    aa=input("Ievdaītais vārds nav programmai pazīstams, pārliecinies, ka tas ir piedāvāto vārdu sarakstā un mēģini vēlreiz! - ")
+    if aa in vardi: 
+        print(sk[vardi.index(aa)])
+        while True:
+            b=(input("Vai vēlaties redzēt vārda lietojuma piemēru? Atbildiet ar 'Jā' vai 'Nē'. - "))
+            if b == 'Jā':
+                print(liet[vardi.index(aa)])
+                break
+            elif b =='Nē':
+                print("Ceru, ka programma bija spējīga atrisināt Jūsu neskaidrības!")
+                break
+            else:
+                z=(input("Atbilde nav nolasāma, pārliecinies, ka ievadīji prasīto pareizi un mēģini vēlreiz.- "))
+                if z == 'Jā':
+                    print(liet[vardi.index(aa)])
+                    break
+                if z =='Nē':
+                    print("Ceru, ka programma bija spējīga atrisināt Jūsu neskaidrības!") 
+                    break
+v=(input("Vai vēlies redzēt visus pieejamos vardus, kuriem uzreiz pirms tiem ir attiecīgais skaidrojums? Atbildi ar 'Jā' vai 'Nē', lai turpinātu.- "))         
+if v== 'Jā':
+        print(print_lists(vardi,sk))
+elif v=='Nē':
+    print("Cerams, ka izdevās atrasts meklētās atbildes")
+else:
+    c=(input("Atbilde nav nolasāma, līdzu pārliecinietes par pareizrakstību un velreiz ievadi 'Jā' vai 'Nē'- "))
+    if c== 'Jā':
+        print(print_lists(vardi,sk))
+    if c=='Nē':
+        print("Cerams, ka izdevās atrasts meklētās atbildes")
+papildinājums=(input("Vai vēlies papildināt vārdnīcu? Atbildi ar 'Jā' vai 'Nē'. - ")) 
+if papildinājums == "Nē":
+    print("Paldies, ka izmantojāt mūsu programmu!") 
+elif papildinājums == 'Jā':
+    x=int(input("Ar cik vārdiem vēlies papildināt vārdnīcu? - ")) 
+    for i in range (x): 
+        papild=(input("Ievadi vārdu - ")) 
+        vardi.append(papild)
+    print("Vārdnīca tika veiksmīgi papildināta - ", vardi)
+else:
+    k=(input("Atbilde nav nolasāma, lūdzu pārliecinies par pareizrakstību un mēģini vēlreiz.- "))
+    if k == "Nē":
+        print("Paldies, ka izmantojāt mūsu programmu!") 
+    if k == 'Jā':
+        x=int(input("Ar cik vārdiem vēlies papildināt vārdnīcu? - ")) 
+        for i in range (x): 
+            papild=(input("Ievadi vārdu - ")) 
+            vardi.append(papild)
+        print("Vārdnīca tika veiksmīgi papildināta - ", vardi)    
+print("Cerams, ka spējām atrisināt Jūsu problēmu! Uz dīzu tikšanos!")
