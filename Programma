@@ -17,11 +17,11 @@ if a in vardi:
             print("Ceru, ka programma bija spējīga atrisināt Jūsu neskaidrības!")
             break
         else:
-            z=(input("Atbilde nav nolasāma, pārliecinies, ka ievadīji prasīto pareizi un mēģini vēlreiz."))
-            if b == 'Jā':
+            z=(input("Atbilde nav nolasāma, pārliecinies, ka ievadīji prasīto pareizi un mēģini vēlreiz.- "))
+            if z == 'Jā':
                 print(liet[vardi.index(a)])
                 break
-            elif b =='Nē':
+            if z =='Nē':
                 print("Ceru, ka programma bija spējīga atrisināt Jūsu neskaidrības!")
                 break  
 else:
